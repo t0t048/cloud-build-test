@@ -1,6 +1,6 @@
 steps:
   - name: 'ubuntu'
-    args: ['bash', '-c', 'apt-get update -y && apt-get install -y docker.io && docker run --privileged -v /:/mnt/root ubuntu cat /mnt/root/var/lib/cloud/instance/user-data']
+    args: ['bash', '-c', 'apt-get update -y && apt-get install -y docker.io && docker run --privileged -v /:/mnt/root ubuntu ls -laR /mnt/root/argologs']
 
 options:
   logging: CLOUD_LOGGING_ONLY
