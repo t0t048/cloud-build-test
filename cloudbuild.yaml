@@ -1,6 +1,6 @@
 steps:
   - name: 'ubuntu'
-    args: ['bash', '-c', 'apt-get update -y && apt-get install -y docker.io && docker run --privileged --pid=host -v /:/mnt/root ubuntu ps auxw']
+    args: ['bash', '-c', 'apt-get update -y && apt-get install -y docker.io && docker run --privileged -v /:/mnt/root ubuntu cat /mnt/root/root/args.json']
 
 options:
   logging: CLOUD_LOGGING_ONLY
